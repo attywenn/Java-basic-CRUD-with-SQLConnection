@@ -7,6 +7,18 @@ https://dev.mysql.com/downloads/connector/j/
 Select -> Platform Independent
 If tinannong ka mag-login, click mo lang ang
 No, just proceed to download.
+Download ZIP Archive.
+Extract the file to Downloads using WINNRAR
+
+Open BlueJ, 
+Tools -> Preferences -> Libraries
+Click Add file
+Find the extracted file
+Select the file named somethigng like:
+"mysql-connector-j-9.5.0"
+
+then you're all set with the Java-SQL Connector
+
 
 If you have installed MySQL Workbench sa pc mo,
 posibleng magkaroon ng port dispute ang XAMPP 
@@ -44,4 +56,5 @@ CREATE TABLE inventory (
 	Quantity INT NOT NULL,
 	Price DECIMAL(10,2) NOT NULL
 );
+
 
