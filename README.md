@@ -2,7 +2,7 @@
 Pinagawa ni Prof. Arjo Ladia, ginawa ko 'tong repo na 'to para bigyan ng ideya ang aking mga kaklase.
 
 #include <bongbong.h>
-// 1. DOWNLOAD THE JAR FILE
+// 1. DOWNLOAD THE FILE
 // 2. 'WAG NAMAN KOPYAHIN LAHAT,
 //     LIKE IBAHIN NIYO NAMAN SANA
 //     ANG VARIABLE AND TABLE NAMES
