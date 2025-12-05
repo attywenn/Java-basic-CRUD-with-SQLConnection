@@ -28,6 +28,10 @@ araw ko hahahahahaha
 
 // MYSQL COMMAND
 
+CREATE DATABASE inventory_db;
+
+USE inventory_db;
+
 CREATE TABLE inventory (
 	ProductID INT AUTO_INCREMENT PRIMARY KEY,
 	ProductName VARCHAR (255) NOT NULL,
