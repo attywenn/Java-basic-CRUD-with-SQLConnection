@@ -10,13 +10,17 @@ public class MainMenu {
             System.out.println("2. Read Inventory DB");
             System.out.println("3. Update Inventory");
             System.out.println("4. Delete Product");
-            System.out.println("5. Exit");
+            System.out.println("5. DELETE ALL RECORDS");
+            System.out.println("0. Exit");
             System.out.print("Choice: ");
             
             int choice = sc.nextInt();
             sc.nextLine();
             
             switch (choice) {
+                case 0:
+                    System.out.println("Thank you!");
+                    return;
                 case 1:
                     System.out.println("===> CREATE PRODUCT");
                     System.out.print("Enter product name: ");
@@ -52,8 +56,37 @@ public class MainMenu {
                     Delete.delete(del_id);
                     break;
                 case 5:
-                    System.out.println("Thank you!");
-                    return;
+                    while (true) {
+                        System.out.println("==> TRUNCATE (CLEAR) TABLE");
+                        System.out.println("Do you want to remove the whole code?");
+                        System.out.print("Choice(y/n): ");
+                        char ch = sc.next().charAt(0);
+                        sc.nextLine();
+                        
+                        
+                        if (ch == 'y') {
+    
+                                String sumpa = "Yes, I confirm";
+                                System.out.println("TYPE THIS FIRST:\n"+sumpa);
+                                System.out.print("Enter: ");
+                                String input = sc.nextLine();
+                                
+                                if (input.equals(sumpa)) {
+                                    TRUNCATE.delete();
+                                    System.out.println("Successfully cleared!");
+                                    break;
+                                } else {
+                                    System.out.println("Invalid, or you may have a typo on your sinumpaan.");
+                                }
+            
+                        } else if (ch=='n') {
+                            break;
+                        } else {
+                            System.out.println("Invalid.");
+                        }
+                        break;
+                    }
+                    break;
                 default:
                     System.out.println("Invalid option... Pls try again.");
             }

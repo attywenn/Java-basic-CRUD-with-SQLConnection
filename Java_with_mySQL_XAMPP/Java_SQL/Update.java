@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 public class Update {
     public static void update (int id, String newName, int newQty, double newPrice) {
-        String sql = "UPDATE inventory SET ProductName =?, Quantity=?, Price=?";
+        String sql = "UPDATE inventory SET ProductName = ?, Quantity = ?, Price = ? WHERE ProductID = ?";
         
         try (Connection conn = DBConnection.getConnection();
             PreparedStatement pstmt = conn.prepareStatement(sql)) {
@@ -17,7 +17,7 @@ public class Update {
             int rows = pstmt.executeUpdate();
             
             if (rows > 0) {
-                System.out.println("Product ADDED");
+                System.out.println("Product UPDATED");
             } else {
                 System.out.println("No product found with ID " + id);
             }
