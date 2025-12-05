@@ -2,6 +2,12 @@ DOWNLOAD XAMPP HERE:
 https://www.apachefriends.org/
 Install it.
 
+DOWNLOAD JAVA CONNECTOR TO MYSQL:
+https://dev.mysql.com/downloads/connector/j/
+Select -> Platform Independent
+If tinannong ka mag-login, click mo lang ang
+No, just proceed to download.
+
 If you have installed MySQL Workbench sa pc mo,
 posibleng magkaroon ng port dispute ang XAMPP 
 at MySQL mo, kaya if mangyari 'yon
@@ -38,3 +44,4 @@ CREATE TABLE inventory (
 	Quantity INT NOT NULL,
 	Price DECIMAL(10,2) NOT NULL
 );
+
