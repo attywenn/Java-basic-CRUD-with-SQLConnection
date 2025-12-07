@@ -43,8 +43,12 @@ makagawa ka na ng database...
 PM mo lang ako kapag nalilito ka pa rin, bayaran mo na lang
 araw ko hahahahahaha
 
+Go to: phpMyAdmin (localhost/phpmyadmin)
+		-> tingnan ang "SQL" sa upper navigation bar sa hanay ng
+			phpMyAdmin logo
+		-> i-copy paste ang MySQL comamnd:::
 
-// MYSQL COMMAND
+// MYSQL COMMAND (COPY + PASTE)
 
 CREATE DATABASE inventory_db;
 
@@ -56,5 +60,6 @@ CREATE TABLE inventory (
 	Quantity INT NOT NULL,
 	Price DECIMAL(10,2) NOT NULL
 );
+
 
 
